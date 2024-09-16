@@ -1,0 +1,33 @@
+.mini-header {
+    background-color: rgb(205, 205, 200);
+    width: 100%;
+    height: 30px;
+    margin-bottom: 25px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+  }
+.container-fluid{
+    float: right;
+    cursor: pointer;
+    line-height: 48px;
+    padding: 20px 15px;
+    transition: background-color 0.3s;
+    /* Gantikan property display ke none */
+    display: none;
+    font-size: medium;
+  }
+.collapse {
+    margin-left: 20%;
+    font-size: medium;
+    line-height: 90px;
+    padding-left: 50px;
+    padding-right: 50px;
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+.tambah-paket{
+  margin-left: auto;
+  margin-right: auto;
+}

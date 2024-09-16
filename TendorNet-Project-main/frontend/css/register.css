@@ -1,0 +1,26 @@
+.gradient-custom-3 {
+  background: #84fab0;
+
+  background: -webkit-linear-gradient(
+    to right,
+    #ee7724,
+    #f8dc06,
+    #79f801ba,
+    #59fd01
+  );
+
+  background: linear-gradient(to right, #ee7724, #f8dc06, #79f801ba, #59fd01);
+}
+.gradient-custom-4 {
+  background: #84fab0;
+
+  background: -webkit-linear-gradient(
+    to right,
+    #ee7724,
+    #f8dc06,
+    #79f801ba,
+    #59fd01
+  );
+
+  background: linear-gradient(to right, #ee7724, #f8dc06, #79f801ba, #59fd01);
+}

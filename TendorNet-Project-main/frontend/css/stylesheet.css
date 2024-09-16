@@ -1,0 +1,426 @@
+/* Header, Rifan Putra */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1170px;
+}
+
+.container h3 {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid grey;
+}
+
+.header {
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid grey;
+}
+
+.mini-header {
+  background-color: rgb(255, 238, 0);
+  width: 100%;
+  height: 30px;
+  margin-bottom: 25px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+header {
+  margin-top: 25px;
+  height: 90px;
+  width: 100%;
+  background-color: rgb(253, 253, 253);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 100px;
+  height: 110px;
+  margin-top: 0;
+  margin-right: 15px;
+  padding-bottom: 20px;
+}
+
+.header-left {
+  float: left;
+}
+
+.menu-icon {
+  float: right;
+  cursor: pointer;
+  line-height: 48px;
+  padding: 20px 15px;
+  transition: background-color 0.3s;
+  /* Gantikan property display ke none */
+  display: none;
+}
+
+.header-right {
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-size: small;
+  line-height: 90px;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: black;
+  display: block;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown:hover .isidari-dropdown {
+  display: block;
+}
+
+.isidari-dropdown a:hover {
+  color: #7b7d7d;
+}
+
+.isidari-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.isidari-dropdown a {
+  color: rgba(255, 0, 0, 0.9);
+}
+
+.isidari-dropdown a:hover {
+  color: #232323;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Konten, Muhammad Rizqi I */
+.top-wrapper {
+  padding: 180px 0 200px 0;
+  background-image: url(https://images.unsplash.com/photo-1597733336794-12d05021d510?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.8;
+  font-size: 56px;
+  font-family: monospace;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.top-wrapper p {
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+  background-color: #185adb;
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-daftar {
+  float: right;
+  margin-right: 50px;
+  margin-top: 15px;
+  font-size: smaller;
+  background-color: #fff200;
+  padding: 12px 20px;
+  color: black;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-login a {
+  text-decoration: none;
+}
+
+.btn-daftar a {
+  text-decoration: none;
+}
+
+.btn-daftar:hover {
+  opacity: 1;
+}
+.btn-daftar:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+}
+
+.btn-bungkus a {
+  text-decoration: none;
+}
+
+.btn-wrapper:hover {
+  opacity: 1;
+}
+.btn-wrapper:active {
+  position: relative;
+  top: 2px;
+  box-shadow: none;
+}
+
+.text-left {
+  float: left;
+}
+
+.text-left h2 {
+  color: yellow;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.text-left h4 {
+  margin-left: 50px;
+}
+
+.text-right {
+  float: right;
+  margin-right: 20px;
+}
+
+.text-right p {
+  margin-top: 20px;
+}
+
+.btn-info {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: #5dca66;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+  color: white;
+}
+.btn-info:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+.btn-bungkus {
+  padding-top: 220px;
+  margin-left: 50px;
+}
+
+.btn-paket {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: #fff200;
+  cursor: pointer;
+  box-shadow: 0 7px #b3f305;
+  color: black;
+  margin-left: 20px;
+}
+.btn-paket:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/* login Style*/
+
+.gradient-custom-2 {
+  /* fallback for old browsers */
+  background: #fccb90;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to right,
+    #ee7724,
+    #f8dc06,
+    #79f801ba,
+    #59fd01
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee7724, #f8dc06, #79f801ba, #59fd01);
+}
+
+@media (min-width: 768px) {
+  .gradient-form {
+    height: 100vh !important;
+  }
+}
+@media (min-width: 769px) {
+  .gradient-custom-2 {
+    border-top-right-radius: 0.3rem;
+    border-bottom-right-radius: 0.3rem;
+  }
+}
+
+.protokol {
+  margin-top: 100px;
+  padding: 100px 80px;
+}
+
+.protokol-title {
+  font-size: 32px;
+  text-align: center;
+  border-bottom: 2px solid #dee7ec;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+
+.protokol-content img {
+  width: 200px;
+  height: 200px;
+}
+.protokol-content {
+  display: block;
+  float: left;
+  margin-right: 40px;
+  margin-left: 55px;
+  text-align: center;
+}
+
+.protokol-content h4 {
+  font-size: 20px;
+  margin-top: 30px;
+}
+.protokol-content p {
+  font-size: 18px;
+  font-family: cursive;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Konten, Aldhaf Fadilah */
+.artikel {
+  margin-top: 50px;
+  padding: 100px 80px;
+  clear: both;
+  text-align: center;
+}
+.artikel-title {
+  font-size: 28px;
+  text-align: center;
+  /* border-bottom: 2px solid #dee7ec; */
+  padding-bottom: 5px;
+}
+.artikel p {
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.btn-artikel {
+  display: inline-block;
+  padding: 15px 35px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+  color: white;
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+.btn-artikel:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+/* Kritik Saran, Ridho Azkia Azhar */
+.form {
+  padding: 200px 80px;
+  margin-top: 100px;
+}
+input[type="text"],
+text,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Footer, Rifan Putra */
+footer {
+  margin-top: 100px;
+  height: 200px;
+}
+
+footer .container {
+  padding: 10px 30px;
+  margin: 0 50px;
+}
+
+.footer-right li {
+  border-right: 2px solid black;
+}
+
+footer img {
+  width: 100px;
+}
+
+footer p {
+  color: #f4f9f9;
+  font-size: 15px;
+}
+footer {
+  padding-top: 30px;
+  background-color: rgb(255, 255, 0);
+}
+
+.footer-left {
+  float: left;
+}

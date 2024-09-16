@@ -1,0 +1,32 @@
+header{
+  border-bottom: 2px solid gray;
+}
+
+
+.img-faq img {
+  margin-top: 200px;
+  margin-left: 100px;
+  margin-right: 200px;
+}
+.containerWord h3 {
+  margin-top: 57px;
+  margin-right: 50px;
+  margin-left: 100px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid black;
+  color: #f18913;
+}
+.containerWord h2 {
+  display: inline-block;
+
+  margin-bottom: 0px;
+
+  margin-left: 100px;
+  border-bottom: 2px solid black;
+  width: 90%;
+  padding-bottom: 40px;
+}
+
+.footer-right li {
+  border-right: 1px solid black;
+}

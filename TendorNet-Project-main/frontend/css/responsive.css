@@ -1,0 +1,67 @@
+/* Responsive, Lintang Syuhada */
+@media all and (max-width: 1000px) {
+  .header-right {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .top-wrapper h1 {
+    font-size: 32px;
+  }
+
+  .top-wrapper p {
+    font-size: 15px;
+  }
+
+  .protokol-content {
+    width: 80%;
+  }
+
+  .btn-daftar {
+    display: none;
+  }
+}
+
+@media all and (max-width: 670px) {
+  .protokol-content {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .header-right {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .top-wrapper h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .top-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .btn-daftar {
+    display: none;
+  }
+}
+.bb {
+  margin-top: 500px;
+  padding-top: 40px;
+}
+
+.aa {
+  margin-top: 500px;
+  padding-top: 40px;
+}
