@@ -1,0 +1,202 @@
+/* =========================
+   NEWS PAGE
+========================= */
+
+.body-news {
+  margin-top: 145px;
+  padding: 40px 60px 80px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Judul */
+.body-news > h2 {
+  text-align: center;
+  color: #063b56;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  border-bottom: none;
+}
+
+/* Garis bawah judul */
+.body-news > h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background-color: #ffdb00;
+  border-radius: 5px;
+  margin: 12px auto 35px;
+}
+
+/* =========================
+   ROW BERITA
+========================= */
+
+.body-news .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+  gap: 25px 0;
+}
+
+/* Kolom */
+.body-news .col-4 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.body-news .card {
+  width: 100% !important;
+  height: 100%;
+  min-height: 390px;
+
+  border: none;
+  border-radius: 16px;
+
+  background-color: #ffffff;
+
+  overflow: hidden;
+
+  box-shadow: 0 6px 20px rgba(16, 42, 67, 0.10);
+
+  transition: all 0.25s ease;
+}
+
+.body-news .card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 14px 30px rgba(16, 42, 67, 0.16);
+}
+
+/* =========================
+   GAMBAR BERITA
+========================= */
+
+.body-news .card-img-top {
+  width: 100%;
+  height: 210px;
+
+  object-fit: cover;
+
+  display: block;
+
+  background-color: #eef3f6;
+
+  transition: transform 0.3s ease;
+}
+
+.body-news .card:hover .card-img-top {
+  transform: scale(1.04);
+}
+
+/* =========================
+   CARD BODY
+========================= */
+
+.body-news .card-body {
+  padding: 22px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Judul berita */
+.body-news .card-title {
+  color: #102a43;
+
+  font-size: 17px;
+  font-weight: 700;
+
+  line-height: 1.5;
+
+  min-height: 76px;
+
+  margin-bottom: 20px;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.body-news .btn-primary {
+  width: 100%;
+
+  margin-top: auto;
+
+  padding: 11px 18px;
+
+  border: none !important;
+  border-radius: 8px;
+
+  background-color: #ffdb00 !important;
+  color: #17202a !important;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: all 0.2s ease;
+}
+
+.body-news .btn-primary:hover {
+  background-color: #f3ce00 !important;
+
+  color: #17202a !important;
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   BARIS KEDUA
+========================= */
+
+.body-news .row.mt-5 {
+  margin-top: 25px !important;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .body-news {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .body-news .col-4 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .body-news {
+    margin-top: 125px;
+    padding: 30px 20px 60px;
+  }
+
+  .body-news > h2 {
+    font-size: 26px;
+  }
+
+  .body-news .col-4 {
+    width: 100%;
+  }
+
+  .body-news .card {
+    min-height: 0;
+  }
+
+  .body-news .card-img-top {
+    height: 200px;
+  }
+}

@@ -1,0 +1,42 @@
+
+/* GitHub Pages demo helpers */
+html { scroll-behavior: smooth; }
+body { overflow-x: hidden; }
+.main-header { border-bottom: 2px solid #e5e5e5; }
+.navbar-user { float: right; }
+.navbar-user-button {
+  border: 0;
+  cursor: pointer;
+  background: #fff200;
+  color: #111;
+  border-radius: 10px;
+  padding: 10px 18px;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.navbar-dropdown { position: relative; }
+.navbar-dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 55px;
+  min-width: 130px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+  z-index: 50;
+}
+.navbar-dropdown.open .navbar-dropdown-menu { display: block; }
+.navbar-dropdown-menu a {
+  display: block;
+  padding: 12px 16px;
+  color: #222;
+  text-decoration: none;
+}
+.navbar-dropdown-menu a:hover { background: #f5f5f5; }
+
+@media (max-width: 800px) {
+  .navbar-user { margin-right: 10px; }
+  .navbar-user-button { margin-top: 18px; padding: 8px 12px; }
+}

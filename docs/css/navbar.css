@@ -1,0 +1,247 @@
+/* =====================================================
+   TENDORNET - SHARED NAVBAR
+   Dipakai oleh seluruh halaman frontend.
+   ===================================================== */
+
+/* TOP BAR */
+.mini-header {
+    width: 100%;
+    height: 18px;
+    background: #ffe000;
+}
+
+.mini-header h3 {
+    display: none;
+}
+
+/* HEADER */
+.main-header,
+header.main-header {
+    width: 100%;
+    height: 82px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    top: 18px;
+    left: 0;
+    z-index: 9999;
+}
+
+.main-header .container {
+    width: 100%;
+    max-width: 1170px;
+    height: 82px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* LOGO */
+.main-header .header-left {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.main-header .header-left a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.main-header .logo {
+    width: 78px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+/* MENU */
+.main-header .header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.main-header .header-right ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header .header-right li {
+    float: none !important;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header .header-right li a {
+    display: block;
+    padding: 0;
+    line-height: normal;
+    color: #172033;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color .2s ease;
+}
+
+.main-header .header-right li a:hover {
+    color: #0083a8;
+    background: transparent;
+}
+
+/* USER / LOGOUT */
+.navbar-user {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar-user-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    min-height: 42px;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 8px;
+    background: #ffe000;
+    color: #172033 !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.navbar-user-button:hover {
+    background: #ffd000;
+    color: #172033 !important;
+}
+
+.navbar-dropdown {
+    position: relative;
+}
+
+.dropdown-arrow {
+    font-size: 9px;
+}
+
+.navbar-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 130px;
+    padding: 6px 0;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+.navbar-dropdown.open .navbar-dropdown-menu {
+    display: block;
+}
+
+.navbar-dropdown-menu a {
+    display: block;
+    padding: 9px 16px;
+    color: #172033 !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.navbar-dropdown-menu a:hover {
+    background: #f5f5f5;
+}
+
+/* MOBILE MENU ICON */
+.main-header .menu-icon {
+    display: none;
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Keep page content below the fixed navbar when the page uses normal flow. */
+body {
+    padding-top: 100px;
+}
+
+/* Penyesuaian agar halaman lama tidak tertutup navbar fixed. */
+.promo-hero,
+.contact-hero,
+.body-news {
+    margin-top: 0 !important;
+}
+
+.pala {
+    margin-top: 0 !important;
+}
+
+@media (max-width: 1000px) {
+    .main-header .header-right ul {
+        gap: 18px;
+    }
+
+    .main-header .header-right li a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-header {
+        height: 68px;
+    }
+
+    .main-header .container {
+        height: 68px;
+        justify-content: flex-start;
+    }
+
+    .main-header .header-left {
+        position: static;
+        transform: none;
+    }
+
+    .main-header .logo {
+        width: 72px;
+    }
+
+    .main-header .header-right {
+        display: none;
+    }
+
+    .main-header .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+
+    .navbar-user {
+        display: none;
+    }
+}

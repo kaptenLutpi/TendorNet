@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<link rel="stylesheet" href="css/contactus.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Kami - TendorNet</title>
+
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <style>
+    /* =========================
+       CONTACT PAGE
+    ========================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f9fc;
+      color: #102a43;
+    }
+
+    /* HERO */
+    .contact-hero {
+      margin-top: 120px;
+      background: linear-gradient(135deg, #063b56, #087f9b);
+      padding: 70px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .contact-hero-content span {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: #ffdb00;
+      margin-bottom: 12px;
+    }
+
+    .contact-hero-content h2 {
+      margin: 0 0 15px;
+      font-size: 40px;
+      font-weight: 700;
+    }
+
+    .contact-hero-content p {
+      margin: 0 auto;
+      max-width: 650px;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #e8f4f7;
+    }
+
+    /* CONTAINER */
+    .contact-container {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 70px 25px 90px;
+    }
+
+    /* TITLE */
+    .contact-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-title h2 {
+      margin: 0 0 10px;
+      font-size: 30px;
+      font-weight: 700;
+      color: #102a43;
+    }
+
+    .contact-title p {
+      margin: 0;
+      color: #627d98;
+      font-size: 15px;
+    }
+
+    /* CARDS */
+    .contact-cards {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .contact-card {
+      background: white;
+      border: 1px solid #e3e8ee;
+      border-radius: 16px;
+      padding: 25px 18px;
+      text-align: center;
+
+      min-height: 300px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      box-shadow: 0 8px 25px rgba(16, 42, 67, 0.07);
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-7px);
+      box-shadow: 0 15px 35px rgba(16, 42, 67, 0.13);
+    }
+
+    /* ICON */
+    .contact-icon {
+      width: 95px;
+      height: 95px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 20px;
+      background: #eef5f8;
+
+      margin-bottom: 20px;
+
+      overflow: hidden;
+    }
+
+    .contact-icon img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+    }
+
+    .contact-card h3 {
+      margin: 0 0 10px;
+
+      font-size: 18px;
+      font-weight: 700;
+
+      color: #102a43;
+    }
+
+    .contact-card p {
+      min-height: 45px;
+
+      margin: 0 0 20px;
+
+      color: #627d98;
+
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* BUTTON */
+    .contact-button {
+      display: inline-block;
+
+      width: 100%;
+
+      margin-top: auto;
+
+      padding: 11px 15px;
+
+      border-radius: 8px;
+
+      background: #ffdb00;
+
+      color: #17202a;
+
+      font-size: 14px;
+      font-weight: 700;
+
+      text-decoration: none;
+
+      transition: 0.2s ease;
+    }
+
+    .contact-button:hover {
+      background: #f2ce00;
+      color: #17202a;
+
+      transform: translateY(-2px);
+    }
+
+    /* INFO */
+    .contact-info {
+      max-width: 750px;
+
+      margin: 45px auto 0;
+      padding: 20px 25px;
+
+      text-align: center;
+
+      background: #eef5f8;
+
+      border-radius: 12px;
+
+      color: #52667a;
+
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* AREA */
+    .area-section {
+      margin-top: 80px;
+    }
+
+    .area-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .area-title span {
+      display: block;
+
+      margin-bottom: 8px;
+
+      color: #087f9b;
+
+      font-size: 12px;
+      font-weight: 700;
+
+      letter-spacing: 2px;
+    }
+
+    .area-title h2 {
+      margin: 0 0 10px;
+
+      color: #102a43;
+
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    .area-title p {
+      margin: 0;
+
+      color: #627d98;
+
+      font-size: 15px;
+    }
+
+    .map-container {
+      position: relative;
+
+      overflow: hidden;
+
+      border-radius: 16px;
+
+      background: white;
+
+      border: 1px solid #e3e8ee;
+
+      box-shadow: 0 8px 25px rgba(16, 42, 67, 0.08);
+    }
+
+    .map-container img {
+      display: block;
+
+      width: 100%;
+
+      max-height: 450px;
+
+      object-fit: cover;
+    }
+
+    .map-overlay {
+      position: absolute;
+
+      bottom: 20px;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      background: #ffffff;
+
+      padding: 12px 22px;
+
+      border-radius: 30px;
+
+      color: #102a43;
+
+      font-size: 14px;
+      font-weight: 700;
+
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+      white-space: nowrap;
+    }
+
+    .map-overlay span {
+      margin-right: 5px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1000px) {
+
+      .contact-cards {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+    }
+
+    @media (max-width: 700px) {
+
+      .contact-hero {
+        margin-top: 105px;
+        padding: 50px 20px;
+      }
+
+      .contact-hero-content h2 {
+        font-size: 30px;
+      }
+
+      .contact-container {
+        padding: 50px 20px 70px;
+      }
+
+      .contact-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    }
+
+    @media (max-width: 480px) {
+
+      .contact-cards {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-card {
+        min-height: 280px;
+      }
+
+      .contact-hero-content h2 {
+        font-size: 27px;
+      }
+
+      .map-overlay {
+        font-size: 12px;
+        padding: 10px 15px;
+      }
+
+    }
+
+    
+
+  </style>
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+
+
+
+<body>
+
+
+<?php include 'navbar.php'; ?>
+
+
+
+  <!-- BODY -->
+  <div class="contact-page">
+
+    <!-- HERO -->
+    <div class="contact-hero">
+      <div class="contact-hero-content">
+
+        <span>CONTACT US</span>
+
+        <h2>Hubungi Kami</h2>
+
+        <p>
+          Kami siap membantu kamu. Temukan informasi kontak
+          dan layanan TendorNet di bawah ini.
+        </p>
+
+      </div>
+    </div>
+
+
+    <!-- KONTAK -->
+    <div class="contact-container">
+
+      <div class="contact-title">
+
+        <h2>Butuh Bantuan?</h2>
+
+        <p>
+          Hubungi kami melalui salah satu layanan berikut
+        </p>
+
+      </div>
+
+
+      <div class="contact-cards">
+
+        <!-- WHATSAPP -->
+        <div class="contact-card">
+
+          <div class="contact-icon">
+            <img
+              src="img/download (6).jpg"
+              alt="WhatsApp"
+            >
+          </div>
+
+          <h3>WhatsApp</h3>
+
+          <p>
+            0812345567
+          </p>
+
+          <a href="#" class="contact-button">
+            Hubungi
+          </a>
+
+        </div>
+
+
+        <!-- GMAIL -->
+        <div class="contact-card">
+
+          <div class="contact-icon">
+            <img
+              src="img/gmail.png"
+              alt="Gmail"
+            >
+          </div>
+
+          <h3>Gmail</h3>
+
+          <p>
+            informasi<br>
+            @tendornet.com
+          </p>
+
+          <a href="#" class="contact-button">
+            Kirim Email
+          </a>
+
+        </div>
+
+
+        <!-- TELEPON -->
+        <div class="contact-card">
+
+          <div class="contact-icon">
+            <img
+              src="img/telepon.png"
+              alt="Telepon"
+            >
+          </div>
+
+          <h3>Customer Service</h3>
+
+          <p>
+            02134567
+          </p>
+
+          <a href="#" class="contact-button">
+            Hubungi
+          </a>
+
+        </div>
+
+
+        <!-- INSTAGRAM -->
+        <div class="contact-card">
+
+          <div class="contact-icon">
+            <img
+              src="img/Instagram.jfif"
+              alt="Instagram"
+            >
+          </div>
+
+          <h3>Instagram</h3>
+
+          <p>
+            TendorNetofc
+          </p>
+
+          <a href="#" class="contact-button">
+            Kunjungi
+          </a>
+
+        </div>
+
+
+        <!-- TWITTER -->
+        <div class="contact-card">
+
+          <div class="contact-icon">
+            <img
+              src="img/twitter.jfif"
+              alt="Twitter"
+            >
+          </div>
+
+          <h3>Twitter</h3>
+
+          <p>
+            @TendorNetKeren
+          </p>
+
+          <a href="#" class="contact-button">
+            Kunjungi
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- INFO -->
+      <div class="contact-info">
+        Butuh bantuan lebih detail? Kunjungi sosial media di atas
+        atau hubungi call center kami.
+      </div>
+
+
+      <!-- AREA JANGKAUAN -->
+      <div class="area-section">
+
+        <div class="area-title">
+
+          <span>LOCATION</span>
+
+          <h2>Area Jangkauan</h2>
+
+          <p>
+            Lihat area jangkauan layanan TendorNet melalui peta berikut.
+          </p>
+
+        </div>
+
+
+        <a
+          href="https://www.google.co.id/maps/place/Markas+Uni+soviet/@-6.3450803,106.8084253,10.13z/data=!4m9!1m2!2m1!1smarkas+uni+soviet!3m5!1s0x2e698f636a5b918f:0x9a2a47138afbf9af!8m2!3d-6.2710721!4d107.0273715!15sChFtYXJrYXMgdW5pIHNvdmlldJIBBm11c2V1bQ"
+          target="_blank"
+        >
+
+          <div class="map-container">
+
+            <img
+              src="img/Map.png"
+              class="img-fluid"
+              alt="Area Jangkauan TendorNet"
+            >
+
+            <div class="map-overlay">
+              <span>📍</span>
+              Lihat di Google Maps
+            </div>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-left">
+        <img
+          class="logo"
+          src="img/TendorNet-logos_black.png"
+          alt="TendorNet"
+        >
+      </div>
+
+      <div class="footer-right">
+
+        <ul>
+
+          <li>
+            <a href="contactus.php">
+              Hubungi Kami
+            </a>
+          </li>
+
+          <li>
+            <a href="promo.php">
+              Syarat dan Ketentuan
+            </a>
+          </li>
+
+          <li>
+            <a href="news.php">
+              Berita Teknologi
+            </a>
+          </li>
+
+          <li>
+            <a href="infoTendorNet.php">
+              Info TendorNet
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+</body>
+</html>

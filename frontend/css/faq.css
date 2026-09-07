@@ -1,0 +1,146 @@
+/* =========================
+   FAQ PAGE
+========================= */
+
+.img-faq {
+    width: 100%;
+    max-width: 1155px;
+    margin: 90px auto 0;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.img-faq img {
+    width: 100%;
+    height: 105px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================
+   FAQ CONTENT
+========================= */
+
+.containerWord {
+    max-width: 1155px;
+    margin: 50px auto 90px;
+}
+
+
+/* Judul */
+
+.containerWord h3 {
+    margin: 0 0 35px;
+    padding-bottom: 18px;
+    border-bottom: none;
+    color: #f18913;
+    font-size: 35px !important;
+    font-weight: 700;
+    position: relative;
+}
+
+.containerWord h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #f18913;
+    border-radius: 10px;
+    margin-top: 12px;
+}
+
+
+/* =========================
+   FAQ ITEM
+========================= */
+
+.containerWord h2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 0 15px;
+    padding: 25px 30px;
+
+    width: 100%;
+
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+
+    color: #172b4d;
+    font-size: 20px;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+
+/* tanda + */
+
+.containerWord h2::after {
+    content: "+";
+    font-size: 28px;
+    font-weight: 300;
+    color: #f18913;
+    margin-left: 20px;
+}
+
+
+/* hover */
+
+.containerWord h2:hover {
+    transform: translateY(-2px);
+    border-color: #f18913;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer-right li {
+    border-right: 1px solid black;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    .img-faq {
+        width: calc(100% - 30px);
+        margin-top: 50px;
+    }
+
+    .img-faq img {
+        height: 90px;
+    }
+
+    .containerWord {
+        width: calc(100% - 30px);
+        margin: 40px auto 60px;
+    }
+
+    .containerWord h3 {
+        font-size: 28px !important;
+        margin-bottom: 25px;
+    }
+
+    .containerWord h2 {
+        padding: 20px;
+        font-size: 17px;
+    }
+
+    .containerWord h2::after {
+        font-size: 24px;
+    }
+}

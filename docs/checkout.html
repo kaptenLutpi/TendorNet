@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pembelian Paket - TendorNet</title>
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/github-demo.css">
+  <style>
+    body{margin:0;background:#f7f9fc;font-family:Arial,Helvetica,sans-serif;color:#102a43}
+    .checkout{max-width:760px;margin:155px auto 80px;padding:35px;background:#fff;border-radius:18px;box-shadow:0 12px 35px rgba(16,42,67,.10)}
+    .checkout h1{margin:0 0 10px}.checkout p{color:#627d98}
+    .checkout label{display:block;margin-top:18px;font-weight:700}
+    .checkout input,.checkout select{width:100%;padding:12px;border:1px solid #d9e2ec;border-radius:8px;margin-top:7px}
+    .checkout button{margin-top:24px;border:0;background:#fff200;padding:12px 22px;border-radius:9px;font-weight:700;cursor:pointer}
+    .note{margin-top:18px;padding:14px;border-radius:10px;background:#fff8c5;font-size:14px}
+  </style>
+</head>
+<body>
+<div id="navbar"></div><script src="js/navbar.js"></script>
+<main class="checkout">
+  <h1>Demo Pembelian Paket</h1>
+  <p>Halaman ini adalah simulasi frontend untuk menunjukkan alur pembelian.</p>
+  <label for="paket">Pilih Paket</label>
+  <select id="paket">
+    <option>TendorNet Paket Gamer - 50 Mbps</option>
+    <option>TendorNet Paket Gamer - 100 Mbps</option>
+    <option>Silver</option>
+    <option>Immortal</option>
+    <option>Radiant</option>
+    <option>Bronze</option>
+    <option>Gold</option>
+    <option>Ace</option>
+    <option>Tengkorak</option>
+    <option>Strip</option>
+    <option>Diamond</option>
+  </select>
+  <label for="nama">Nama</label>
+  <input id="nama" type="text" placeholder="Nama lengkap">
+  <label for="email">Email</label>
+  <input id="email" type="email" placeholder="Email">
+  <button onclick="alert('Demo berhasil: data siap diproses oleh backend PHP.');">Lanjutkan Pembelian</button>
+  <div class="note">Untuk transaksi nyata, jalankan project melalui PHP/XAMPP agar backend dan database dapat digunakan.</div>
+</main>
+</body>
+</html>
